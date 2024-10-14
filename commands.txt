@@ -74,3 +74,5 @@ git branch -r -> to check the branches in the remove repo
 git push -u origin <file_name> -> to create a pull request
 
 final commit
+
+tyring something
