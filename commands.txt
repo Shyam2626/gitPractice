@@ -72,3 +72,5 @@ git remove -> to recieve the info about the repo
 git branch -r -> to check the branches in the remove repo
 
 git push -u origin <file_name> -> to create a pull request
+
+final commit
