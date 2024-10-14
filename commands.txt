@@ -1,0 +1,74 @@
+git directory , working tree , staging area -> three areas in the git
+
+files can be of three types modified , staged , commited
+
+git config --global user.email "me@example.com"
+git config --global user.name "My name"
+git config -l -> to check the current status of the git
+
+mkdir <repository_name> -> to create a folder(direactory)
+cd <repository_name> -> to go into the repository
+git init -> to initialize a repository
+git clone -> to clone a repository
+
+git add "<file_name>" -> to add the file to staging area
+git status -> to check the status of the branch
+
+git commit -> open a area to type the commit message
+:wq -> to exit the area and come to main terminal
+(or)
+git commit -m '<commit message>' -> to commit in git
+
+git log -> to check the commit messages like who commited what and so on
+
+git commit -a -> to skip the staging area[git add .] and directly commit
+git commit -a -m "<commit message>" -> to commit wihtout adding with message
+
+git show <commit_id> -> shows the changes made in the file during the current commit
+git log --stat -> extra feature
+
+git rm <file_name> -> to delete a file from git
+git mv <old_file_name> <new_file_name> -> to rename the a exsisting file in git
+
+git reset HEAD <file_name> -> to remove a file from commiting [making it untracked , they will not be added until we use " git add <file name> "]
+
+git commit --amend -> to  undo and add or modify the changes to the previous commit 	
+
+REVERTING COMMABDS
+
+git revert HEAD -> used to reverse a commit[change the previously made commit]
+git revert <commit id> -> used to ROLLBACK to particular commit
+
+BRANCHING COMMANDS
+
+git branch -> to check[display] all the branches in git 
+
+git branch <new_branch> -> to create a new branch
+
+git checkout -b <branch name> -> to create a new branch
+
+git checkout <branch_name> -> to change to a particular branch
+
+git branch -d <branch_name> -> to delete a curr branch 
+
+git merge <branch-name > -> to merge the branch to the curr branch 
+
+Fast forward and threeway merge is the algorithm used by git
+
+git log --graph --oneline -> to view the git log in a graph format [can be used sep also]
+
+git merge --abort -> to abort the merging 
+
+REMOTE REPOSITORY
+
+git clone <repo id> -> used for cloning a repo
+
+git push -> used to commit in the remote repo
+
+git pull -> used to retreve all the files from the repo[2-3 people work on the same project]
+
+git remove -> to recieve the info about the repo
+
+git branch -r -> to check the branches in the remove repo
+
+git push -u origin <file_name> -> to create a pull request
